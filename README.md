@@ -113,3 +113,7 @@ for(var key in sequenses) {
 ## To Do
 1. Scripts which can convert fasta to json.
 2. More beautiful presentation in browser page.
+
+## Acknowledgement
+
+Xingyang Qian and Yuning Zhang raise the question, Tongchun Lu and Jiahong Li helps a lot.
