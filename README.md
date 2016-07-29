@@ -4,9 +4,8 @@ Automatically Parse Stellaris® Probe Designer Data using Javascript code.
 ## How to Run
 1. open `https://www.biosearchtech.com/stellarisdesigner` using Chrome.
 2. Login, using your own account and passwd. 
-3. Open the `JavaScript Console`, (⌥⌘J, macOS) or Menu --> View --> Developer --> JavaScript console, in Chrome.
-4. Paste the code in `parseprobe.js` file into `JavaScript Console` and Run it By ENTER.
-
+3. Open the `JavaScript Console`, (⌥⌘J, macOS) or Menu --> View --> Developer --> JavaScript Console, in Chrome.
+4. Paste the code in `Code` into `JavaScript Console` and Run.
 	
 	
 ## Results
@@ -23,6 +22,10 @@ Results	are listed in the current chrome browser page.
 |2			|tusc7		|4		|45		|257	|cacggttcgaatttgcttga |
 |...
 
+
+## Figure
+
+![figure](https://github.com/barrykui/parseprobe/blob/master/imgs/probedesign.png)
 
 ## Code
 
