@@ -11,7 +11,7 @@ var sequenses={
 $('body').html('');
 var g = {};//global variable
 var i=0;//
-var time=1000;//interval time
+var intervalTime=1000;//interval time
 var failKeys = "";//failed keys
 var failToSuccess = "";//first-fail-then-success keys
 var finish = 0; //count
@@ -32,7 +32,13 @@ function getResults(d,key) {
                 console.log("first-fail-then-success keys:"+failToSuccess);
             }
             finish++;
-            $('body').append(key+':'+JSON.stringify(d.value.probes)+'<br/>*******<br/>');
+            var content="";
+            var probes = d.value.probes;
+            for(var ind in probes){
+                content+=key+"\t"+ind+"\t"+probes[ind].$id+"\t"+probes[ind].gc+"\t"+probes[ind].position+"\t"+probes[ind].sequence+"\n<br/>";
+            }
+            //$('body').append(key+':'+JSON.stringify(d.value.probes)+'<br/>*******<br/>');
+            $('body').append(content);
         })
         .fail(function() {
             g[key]++;
@@ -55,17 +61,17 @@ function getResults(d,key) {
     } 
 }
 
-for(var key in b) {
-    var cur = b[key];
+for(var key in sequenses) {
+    var cur = sequenses[key];
     i++;
     g[key] = 0;
     (function(cur,key,i){
         
         setTimeout(function() {
             getResults(cur,key);
-        },i*1000);
+        },i*intervalTime);
     })(cur,key,i);
-    console.log(key+":"+i);
+    console.log(i+":"+key);
 }
 
 
