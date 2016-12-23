@@ -117,4 +117,4 @@ for(var key in sequenses) {
 
 ## Acknowledgement
 
-Xingyang Qian and Yuning Zhang raise the question, Tongchun Lu and Jiahong Li helps a lot.
+Xingyang Qian and Yuning Zhang raise the question, Tongchun Lu and Jiahong Li help a lot.
